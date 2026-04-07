@@ -1,76 +1,57 @@
-# 🏥 Insurance Premium Optimization using Risk Analysis
+# 🏥 Insurance Premium Optimization & Risk Analysis
+### *Data-Driven Dynamic Pricing Model for Healthcare Insurance*
+
+---
 
 ## 📌 Project Overview
+Traditional insurance pricing often relies on broad demographics. This project utilizes a comprehensive health and lifestyle dataset to propose a **Risk-Based Premium Pricing Model**. By analyzing specific physiological markers and lifestyle choices, I have simulated a system where premiums are adjusted dynamically to reflect the true risk profile of the insured.
 
-This project analyzes a diabetes dataset to understand how health and lifestyle factors impact insurance risk, and proposes a **risk-based premium pricing model**.
+## 📊 The Pricing Logic
+The model starts with a **Base Premium of ₹5,000** and applies incremental surcharges based on the following risk factors:
 
-The goal is to simulate how an insurance company can **adjust premiums dynamically** based on customer risk profiles.
+| Risk Factor | Additional Surcharge | Logic / Condition |
+| :--- | :--- | :--- |
+| **Smoking** | + ₹1,250 (max) | 25% for Current / 10% for Former (+2y waiting) |
+| **Alcohol** | + ₹1,250 (max) | 25% for Heavy / 10% for Moderate |
+| **Diabetes History** | + ₹750 | 15% surcharge for positive family history |
+| **Blood Pressure** | + ₹1,000 | 20% surcharge for High Systolic levels |
 
----
-
-## 📊 Key Features
-
-* Interactive Tableau Dashboard
-* Risk segmentation using:
-
-  * Smoking habits
-  * Alcohol consumption
-  * Blood pressure levels
-  * Diabetes family history
-* Custom-built **premium pricing logic**
+> **Calculated Premium Range:** ₹5,000 – ₹9,250
 
 ---
 
-## 💡 Pricing Model
-
-Base Premium: ₹5000
-
-Additional charges:
-
-* Smoking → up to ₹1250
-* Alcohol → up to ₹1250
-* Diabetes History → ₹750
-* High Blood Pressure → ₹1000
+## 📈 Key Insights & Risk Segmentation
+* **Compounding Risks:** Customers exhibiting a "Triple Threat" (Smoking + Heavy Alcohol + High BP) see an **85% increase** in premiums compared to the base.
+* **Lifestyle Impact:** Modifiable factors like smoking and alcohol are the primary drivers of premium volatility, contributing up to ₹2,500 of the total cost.
+* **Cohort Analysis:** Analyzed a base of **5,070 citizens** to identify the most common high-risk segments across demographics.
 
 ---
 
-## 📈 Key Insights
-
-* Customers with **high BP, smoking habits, and diabetes history** show significantly higher risk.
-* Lifestyle factors (smoking, alcohol) contribute heavily to premium variation.
-* Premium range observed: ₹5,000 – ₹9,250
-
----
-
-## 🛠 Tools Used
-
-* Tableau (Dashboard & Visualization)
-* Excel / CSV Dataset
-* Basic Data Analysis Techniques
+## 🛠 Tech Stack & Methodology
+* **Tableau:** Interactive data storytelling, quadrant analysis, and parameter-driven dashboards.
+* **Excel / CSV:** Data cleaning and initial feature engineering for risk categories.
+* **Business Intelligence:** Developed custom calculated fields in Tableau to simulate the dynamic pricing engine.
 
 ---
 
-## 📷 Dashboard Preview
-
-### Dashboard 1 – Risk Analysis
-
-![Dashboard](images/dashboard1.png)
-
-### Dashboard 2 – Premium Model
-
-![Dashboard](images/dashboard2.png)
+## 🖥 Dashboard Features
+The interactive Tableau dashboard allows for deep-dive analysis through four key quadrants:
+1. **Genetic Risk:** Pie chart representing family history of diabetes.
+2. **Consumption Patterns:** Tree map for alcohol and Donut chart for smoking status.
+3. **Physiological Data:** Bar chart tracking Systolic BP across the patient base.
+4. **Dynamic Filtering:** Cross-filtering enabled to see how specific habits (e.g., Heavy Alcohol) correlate with physiological markers (e.g., BP levels).
 
 ---
 
-## 🚀 Future Improvements
-
-* Add machine learning-based risk prediction
-* Integrate real-world insurance datasets
-* Build web app for real-time premium calculation
+## 🚀 Future Roadmap
+* **Predictive Modeling:** Implement Machine Learning (Random Forest) to predict the probability of chronic illness.
+* **Web Integration:** Build a web app for real-time premium calculation based on user input.
+* **Actuarial Expansion:** Integrate real-world mortality and morbidity tables for higher financial accuracy.
 
 ---
 
 ## 👤 Author
-
-Parjanya Vasisht
+**Parjanya Vasisht**  
 www.linkedin.com/in/parjanya-vasisht-08a06b31b
+
+---
