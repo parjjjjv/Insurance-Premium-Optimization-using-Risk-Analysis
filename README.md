@@ -40,6 +40,10 @@ The interactive Tableau dashboard allows for deep-dive analysis through four key
 2. **Consumption Patterns:** Tree map for alcohol and Donut chart for smoking status.
 3. **Physiological Data:** Bar chart tracking Systolic BP across the patient base.
 4. **Dynamic Filtering:** Cross-filtering enabled to see how specific habits (e.g., Heavy Alcohol) correlate with physiological markers (e.g., BP levels).
+   <img width="1170" height="876" alt="Screenshot 2026-04-07 205802" src="https://github.com/user-attachments/assets/108ab689-bf32-4826-a0ae-31d8bc2c3d51" />
+   <img width="1262" height="776" alt="Screenshot 2026-04-07 205822" src="https://github.com/user-attachments/assets/a490db1c-4a91-4713-8bc9-8bc4a7b726fd" />
+
+
 
 ---
 
